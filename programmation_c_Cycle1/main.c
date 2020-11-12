@@ -1,79 +1,59 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define TAILLE 100
+
+
+//const int TAILLE=100;
+
+
 
 int main()
 {
 
-    //integer
-    //unsigned : non signé ex: unsigned short sn_entier
-    short sn_entier;
-    //Entier court
-    int n_entier;
-    //Entier normal
-    long l_entier;
-    //Entier long
+    //Exemple
+    int n_a=0,n_b=0;
+    char c_car='a';
+    float flt_f=0.0;
+    int n_test;
 
 
-    printf("Taille en octet du short : %d\n",sizeof(sn_entier));
-    printf("Taille en octet du normal : %d\n",sizeof(n_entier));
-    printf("Taille en octet du long : %d\n",sizeof(l_entier));
+    printf("Bonjour\n");
+    printf("Programme exemple\n");
 
-    //reel
-    //unsigned : non signé ex: unsigned float flt_reel
-    float flt_reel;
-    double dbl_reel;
-    long double ldbl_reel;
+    //Affichage formate
+    printf("n_a : %d\n",n_a);
+    printf("n_b : %d\n",n_b);
+    printf("c_car : %c\n",c_car);
+    printf("flt_f : %f\n",flt_f);
 
-    printf("Taille en octet du float : %d\n",sizeof(flt_reel));
-    printf("Taille en octet du double : %d\n",sizeof(dbl_reel));
-    printf("Taille en octet du long double : %d\n",sizeof(ldbl_reel));
-
-    //caractère
-    char c_car;
-    printf("Taille en octet du caractere : %d\n",sizeof(c_car));
-
-    //operateurs
-
-    int n_a=0;
-    int n_b=0;
+    printf("Entrez un entier\n");
+    //scanf("%d",&n_test);
+    printf("n_test : %d\n",n_test);
 
 
-    //==
-    //<=
-    //>=
-    // != (pas =)
-    // '/' division
-    // % modulo
-    //=
-    //, indexation
-    //& ET (&&)
-    //| OU (||)
-    // ! NON
-    //++ incrémentation
-    //-- désincrémentation
-    //+=
-    //-=
-    // /=
-    //*=
-    //printf("%d",n_a>n_b);
+    putchar(c_car); //affichage non formate
 
-    //ECRIRE
-    printf("val de a : %d\n",n_a);
-    printf("val de a : %d\n",n_b);
-    printf("val de n_a : %d et n_b : %d \n",n_a,n_b);
+    /*printf("Entrez un entier : \n");
+    scanf("d%",&n_a);
+    printf("Entrez un entier : \n");
+    scanf("d%",&n_b);*/
+    printf("Entrez deux entiers : \n");
+    scanf("%d%d", &n_a,&n_b);
 
-    //LIRE
-    printf("Saisir un entier a \n");
-    scanf("%d",&n_a);
-    printf("Saisir un entier b \n");
-    scanf("%d",&n_b);
+    printf("n_a : %d\n",n_a);
+    printf("n_b : %d\n",n_b);
 
-    printf("val de n_a : %d et n_b : %d \n",n_a,n_b);
+    fflush(stdin);//vider le tampon stdin, permet de scanf une nouvelle fois
+    printf("Entrez un caractere : \n");
+    scanf("%c",&c_car);
 
+    printf("c_car : %c\n",c_car);
 
+    fflush(stdin);//vider le tampon stdin, permet de scanf une nouvelle fois
+    printf("Entrez un caractere : \n");
+    c_car=getchar();
 
-
-
+    printf("c_car : %c\n",c_car);
 
 
     return 0;
