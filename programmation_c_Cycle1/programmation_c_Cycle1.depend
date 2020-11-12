@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
+<<<<<<< Updated upstream
 1605182446 source:d:\home\documents\ludus f2\algo\nouveau dossier\deuxièmetest\programmation_c_cycle1\main.c
+=======
+1605197532 source:d:\home\documents\ludus f2\algo\nouveau dossier\deuxièmetest\programmation_c_cycle1\main.c
+>>>>>>> Stashed changes
 	<stdio.h>
 	<stdlib.h>
 

@@ -1,76 +1,58 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define NBI 10
+
+
+
 
 int main()
 {
+    int n_a=0,n_b=0;
 
-    //integer
-    //unsigned : non signé ex: unsigned short sn_entier
-    short sn_entier;
-    //Entier court
-    int n_entier;
-    //Entier normal
-    long l_entier;
-    //Entier long
-
-
-    printf("Taille en octet du short : %d\n",sizeof(sn_entier));
-    printf("Taille en octet du normal : %d\n",sizeof(n_entier));
-    printf("Taille en octet du long : %d\n",sizeof(l_entier));
-
-    //reel
-    //unsigned : non signé ex: unsigned float flt_reel
-    float flt_reel;
-    double dbl_reel;
-    long double ldbl_reel;
-
-    printf("Taille en octet du float : %d\n",sizeof(flt_reel));
-    printf("Taille en octet du double : %d\n",sizeof(dbl_reel));
-    printf("Taille en octet du long double : %d\n",sizeof(ldbl_reel));
-
-    //caractère
-    char c_car;
-    printf("Taille en octet du caractere : %d\n",sizeof(c_car));
-
-    //operateurs
-
-    int n_a=0;
-    int n_b=0;
+    //Condition
+    if(n_a==n_b){
+        printf("n_a et n_b identiques");
+    }else{
+        printf("n_a et n_b pas identiques");
+    }
 
 
-    //==
-    //<=
-    //>=
-    // != (pas =)
-    // '/' division
-    // % modulo
-    //=
-    //, indexation
-    //& ET (&&)
-    //| OU (||)
-    // ! NON
-    //++ incrémentation
-    //-- désincrémentation
-    //+=
-    //-=
-    // /=
-    //*=
-    //printf("%d",n_a>n_b);
+    //condition switch
 
-    //ECRIRE
-    printf("val de a : %d\n",n_a);
-    printf("val de a : %d\n",n_b);
-    printf("val de n_a : %d et n_b : %d \n",n_a,n_b);
+    int n_choix=0;
 
-    //LIRE
-    printf("Saisir un entier a \n");
-    scanf("%d",&n_a);
-    printf("Saisir un entier b \n");
-    scanf("%d",&n_b);
+    printf("Menu\n");
+    printf("1:Menu 1\n");
+    printf("2:Menu 2\n");
+    printf("choix ?\n");
+    scanf("%d",&n_choix);
 
-    printf("val de n_a : %d et n_b : %d \n",n_a,n_b);
+    switch(n_choix){
+        case 1 :printf("Menu 1\n");break;
+        case 2 :printf("Menu 2\n");break;
+        default :printf("Pas de menu");
+    }
 
+    //boucle pour
+    int i;
 
+    for(i=0;i<NBI;i++){
+        printf("%d",i);
+    }
+
+    //faire tant que
+    i=0;
+    do{
+        printf("%d",i);
+        i++;
+    }while(i<NBI);
+
+    //tant que faire
+    i=0;
+    while(i<NBI){
+        printf("%d",i);
+        i++;
+    }
 
 
 
